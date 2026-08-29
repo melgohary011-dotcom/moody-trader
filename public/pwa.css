@@ -1,0 +1,19 @@
+.install-tip {
+  position: fixed;
+  right: 12px;
+  left: 12px;
+  bottom: calc(12px + env(safe-area-inset-bottom));
+  z-index: 100;
+  background: #101710;
+  border: 1px solid #3c573c;
+  border-radius: 16px;
+  padding: 14px 44px 14px 14px;
+  box-shadow: 0 14px 50px rgba(0, 0, 0, .55);
+  color: #f5f7f5;
+}
+.install-tip[hidden] { display: none; }
+.install-tip strong, .install-tip span { display: block; }
+.install-tip strong { color: #76ff48; margin-bottom: 5px; }
+.install-tip span { color: #d7ddd7; font-size: 13px; line-height: 1.6; }
+.install-tip button { position: absolute; right: 12px; top: 10px; border: 0; background: transparent; color: #fff; font-size: 25px; }
+.install-tip b { color: #76ff48; }
