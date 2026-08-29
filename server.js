@@ -75,4 +75,4 @@ app.get('/api/egx/stocks/:ticker/analysis', async(req,res)=>{
 app.get('/api/health',(req,res)=>res.json({ok:true,service:'moody-trader'}));
 
 app.use(express.static(path.join(__dirname,'public')));
-app.listen(PORT,()=>console.log(`Moody Trader v0.4: http://localhost:${PORT}`));
+app.listen(PORT,()=>console.log(`Moody Trader v0.5 PWA: http://localhost:${PORT}`));
