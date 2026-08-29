@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: moody-trader
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: MANSA_API_KEY
+        sync: false

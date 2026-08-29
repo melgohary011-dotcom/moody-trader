@@ -1,0 +1,15 @@
+{
+  "name": "moody-trader",
+  "version": "0.4.0",
+  "private": true,
+  "description": "Moody Trader EGX dashboard with Mansa API and real technical indicators when historical entitlement is available",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  }
+}
