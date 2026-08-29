@@ -1,1 +1,31 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#050705"><title>Moody Trader</title><link rel="stylesheet" href="styles.css"></head><body><div class="app-shell"><header class="topbar"><div class="brand">Moody <b>Trader</b></div><div class="live-pill" id="sourcePill">EGX • MANSA</div></header><section class="hero card"><div><h1>Moody Trader</h1><p>تحليل أسهم البورصة المصرية ببيانات Mansa، مع مؤشرات فنية حقيقية عند توافر التاريخ السعري.</p></div><div class="hero-score"><span>Market Mood</span><strong id="marketMood">—</strong></div></section><section class="search-wrap"><input id="searchInput" type="search" placeholder="ابحث باسم الشركة أو الرمز..."></section><section class="quick-stats"><div class="card mini-stat"><span>الأسهم</span><b id="stocksCount">—</b></div><div class="card mini-stat"><span>صاعد</span><b class="up" id="upCount">—</b></div><div class="card mini-stat"><span>هابط</span><b class="down" id="downCount">—</b></div><div class="card mini-stat"><span>حالة البيانات</span><b class="warn" id="dataStatus">تحميل</b></div></section><section class="section-head"><h2>أسهم EGX</h2><button class="ghost" id="sortBtn">ترتيب حسب التغير</button></section><section id="stocksGrid" class="stocks-grid"><div class="card">جاري تحميل بيانات Mansa…</div></section></div><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#050705">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Moody Trader">
+  <title>Moody Trader</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pwa.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar"><div class="brand">Moody <b>Trader</b></div><div class="live-pill" id="sourcePill">EGX • MANSA</div></header>
+    <section class="hero card"><div><h1>Moody Trader</h1><p>تحليل أسهم البورصة المصرية ببيانات Mansa، مع مؤشرات فنية حقيقية عند توافر التاريخ السعري.</p></div><div class="hero-score"><span>Market Mood</span><strong id="marketMood">—</strong></div></section>
+    <section class="search-wrap"><input id="searchInput" type="search" placeholder="ابحث باسم الشركة أو الرمز..."></section>
+    <section class="quick-stats"><div class="card mini-stat"><span>الأسهم</span><b id="stocksCount">—</b></div><div class="card mini-stat"><span>صاعد</span><b class="up" id="upCount">—</b></div><div class="card mini-stat"><span>هابط</span><b class="down" id="downCount">—</b></div><div class="card mini-stat"><span>حالة البيانات</span><b class="warn" id="dataStatus">تحميل</b></div></section>
+    <section class="section-head"><h2>أسهم EGX</h2><button class="ghost" id="sortBtn">ترتيب حسب التغير</button></section>
+    <section id="stocksGrid" class="stocks-grid"><div class="card">جاري تحميل بيانات Mansa…</div></section>
+  </div>
+  <aside class="install-tip" id="installTip" hidden><button id="closeInstallTip" aria-label="إغلاق">×</button><strong>ثبّت Moody Trader على الآيفون</strong><span>اضغط مشاركة <b>⎋</b> ثم «إضافة إلى الشاشة الرئيسية».</span></aside>
+  <script src="pwa.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
